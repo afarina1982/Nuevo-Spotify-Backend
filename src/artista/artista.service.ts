@@ -5,7 +5,7 @@ import { Artista } from './entities/artista.entity';
 
 @Injectable()
 export class ArtistaService {
-  artista: Artista[] = [];
+  artista: Artista[] = []; 
 
   constructor() {
     this.artista.push(new Artista(1, 'Shakira', 'Shakira Isabel Mebarak Ripoll es una cantante, compositora, productora discográfica, bailarina, modelo, empresaria, actriz, embajadora de buena voluntad de la UNICEF y filántropa colombiana.', 'Colombia', ['Pop', 'Rock', 'Latino'], 1000000, 'Solista', true));

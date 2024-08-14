@@ -3,18 +3,18 @@ import { CancionService } from './cancion.service';
 import { CreateCancionDto } from './dto/create-cancion.dto';
 import { UpdateCancionDto } from './dto/update-cancion.dto';
 
-@Controller('cancion')
+@Controller('canciones')
 export class CancionController {
   constructor(private readonly cancionService: CancionService) {}
 
   @Post()
   create(@Body() createCancionDto: CreateCancionDto) {
-    return this.cancionService.create(createCancionDto);
+    return this.cancionService.create(createCancionDto); 
   }
 
   @Get()
   findAll() {
-    return this.cancionService.findAll();
+    return this.cancionService.findAll(); 
   }
 
   @Get(':id')

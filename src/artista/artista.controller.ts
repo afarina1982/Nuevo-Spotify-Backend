@@ -3,7 +3,7 @@ import { ArtistaService } from './artista.service';
 import { CreateArtistaDto } from './dto/create-artista.dto';
 import { UpdateArtistaDto } from './dto/update-artista.dto';
 
-@Controller('artista')
+@Controller('artistas')
 export class ArtistaController {
   constructor(private readonly artistaService: ArtistaService) {}
 
